@@ -11,3 +11,11 @@ void enterArrayData(double* a, int n) {
     cout << "Data entered :)" << endl;
 }
 
+void outputArrayData(const double* a, int n) {
+    cout << "Stuff in the array: " << endl;
+    for (int i = 0; i < n; ++i) {                   // Whole block outputs the array elements
+        cout << *(a + i);
+        if (i + 1 < n) cout << ", ";
+    }
+    cout << "\n";                                   // One newline at the end for better formatting
+}
