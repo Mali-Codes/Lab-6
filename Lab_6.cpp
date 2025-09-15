@@ -25,3 +25,13 @@ double sumArray(const double* a, int n) {         // Add it upppppppp
     for (const double* p = a; p != a + n; ++p) total += *p;
     return total;
 }
+
+int main() {
+    double* arr = new double[N];
+
+    enterArrayData(arr, N);
+    outputArrayData(arr, N);
+    cout << "Sum of array elements: " << sumArray(arr, N) << endl;
+    delete[] arr;
+    return 0;
+}
