@@ -19,3 +19,9 @@ void outputArrayData(const double* a, int n) {
     }
     cout << "\n";                                   // One newline at the end for better formatting
 }
+
+double sumArray(const double* a, int n) {         // Add it upppppppp
+    double total = 0.0;
+    for (const double* p = a; p != a + n; ++p) total += *p;
+    return total;
+}
